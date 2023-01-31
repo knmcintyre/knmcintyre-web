@@ -7,7 +7,7 @@ function setup() {
   createCanvas(710, 400);
   ds = new PenroseLSystem();
   //please, play around with the following line
-  ds.simulate(5);
+  ds.simulate(6);
 }
 
 function draw() {
@@ -27,7 +27,7 @@ function PenroseLSystem() {
     this.ruleZ = "--YF++++WF[+ZF++++XF]--XF";
 
     //please play around with the following two lines
-    this.startLength = 460.0;
+    this.startLength = 400.0;
     this.theta = TWO_PI / 10.0; //36 degrees, try TWO_PI / 6.0, ...
     this.reset();
 }
